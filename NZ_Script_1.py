@@ -15,7 +15,7 @@ def merge_reports():
     with open(constants.INSTITUTIONS_JSON_FILE) as institutions_json:
         institutions = json.load(institutions_json)
 
-    columns=["JobID", "Network Id", "Existing 035a", "Incoming 035a", "Action"]
+    columns=["JobID", "Network Id", "Existing 035a", "Incoming 035a", "Action", "Misc"]
     merged = pd.DataFrame(columns=columns)
 
     #Read each bibprocessing report in the inputs folder
